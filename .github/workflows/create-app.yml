@@ -17,6 +17,6 @@ jobs:
         - run: echo "deploying to $(cat ./app)"
         # - name: Setup tmate session # this lets you SSH into the container
         #   uses: mxschmitt/action-tmate@v3
-        - run: flyctl apps create -o mobilecoin-twix $(cat ./app)
+        - run: flyctl apps create -o personal $(cat ./app)
         - run: flyctl deploy -a $(cat ./app) --remote-only
 
